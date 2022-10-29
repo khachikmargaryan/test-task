@@ -1,0 +1,31 @@
+{
+    "name": "test-task/commission-task-skeleton",
+    "description": "Skeleton for Test Task recruitment task",
+    "keywords": [],
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "TestTask\\CommissionTask\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TestTask\\CommissionTask\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=7.0",
+        "ext-bcmath": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5",
+        "friendsofphp/php-cs-fixer": "2.16"
+    },
+    "config": {
+        "sort-packages": true,
+        "bin-dir": "bin"
+    },
+    "scripts": {
+        "calculate": "php calculate.php --file"
+    }
+}
